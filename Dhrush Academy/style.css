@@ -1,0 +1,257 @@
+/* .root{ */
+    /* only applicable when we give the code in this format ex.. #ff0g9 */
+    /* --yellow:rgb(239, 201, 11) */
+/* } */
+body{
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background:linear-gradient(to right,rgb(255,45,67),rgb(53,54,246)) 
+}
+.landing{
+    background-image: url(logo.jpg);
+    /* that is our cover image so that we should give this */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: whitesmoke;
+}
+header a{
+    text-decoration: none;
+    color: rgb(239, 201, 11);
+    /* color: var(--yellow); */
+    min-width:100px;
+}
+header{
+    display: flex;
+    padding: 1.2em;
+    flex-wrap: wrap;
+
+}
+#logo{
+    flex: 3;
+    font-size: 2em;
+}
+#logo:hover{
+    color: cyan;
+}
+nav{
+    flex:2;
+    font-size: 1.2em;
+    min-width: 200px;
+        /* to give equal spaces between the nav object we should declare it as flex */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px 0px 650px;
+    /* display: grid; */
+}
+nav a{
+    flex: 1;
+    display:flex;
+    /* min-width:100px; */
+    flex-wrap:wrap;
+}
+nav a:hover{
+    color: aquamarine;
+}
+header h2 i,nav a i{
+    margin-right: .5em;
+    padding: 2px 0px 0px 0px;
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    justify-content: center;
+    padding: 2em;
+}
+.tagline1{
+    color: rgb(243, 162, 11);
+    font-size: 2em;
+    font-weight: bolder;
+}
+.tagline2{
+    color: rgb(255, 253, 253);
+    margin: 20px;
+    padding: 10px 0px 0px 0px ;
+    font-size: 1.5em;
+}
+.tagline2:hover{
+    color:rgb(250, 7, 88);
+}
+.contact{
+    color: rgb(253, 63, 63);
+    font-size: 1.2em;
+    padding: 10px;
+}
+.contact:hover{
+    color: aqua;
+}
+.maintext button{
+    width:20vh;
+   margin: 10px 0px 0px 10px;
+   border-radius: 20px;
+   padding: 10px;
+   background-color: aquamarine;
+   color: rgb(58, 57, 57);
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.maintext button:hover{
+    color:orange;
+
+}
+.maintext button:active{
+    color: blueviolet;
+}
+.courses{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.services p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.services h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.courses{
+    display: grid;
+    background:linear-gradient(to right,rgb(255,45,67),rgb(53,54,246)) ;
+    color: white;
+}
+#head{
+    display:flex;
+    justify-content: center;
+    color: rgb(238, 230, 7);
+}
+#head2{
+    display:flex;
+    justify-content: center;
+    color: rgb(238, 230, 7);
+}
+.courses{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr)) ;
+}
+.courses th{
+    color: rgb(243, 217, 115);
+    font-size: 1.2em;
+}
+/* the table must occupy its full width so we have to give table width 100 */
+table{
+    width: 100%;
+    padding: 1em;
+}
+.courses tr{
+    display:flex;
+    justify-content:center;
+    margin-top:1em;
+}
+.courses td:nth-child(1){
+    flex: 1;
+    justify-self:left;
+}
+.courses td:nth-child(2){
+    justify-self: right;
+}
+.services h2{
+    color: aqua;
+    text-align: center;
+}
+.services p{
+    color: whitesmoke;
+    padding: 20px;
+}
+.services{
+    display: flex;
+    min-width:300px;
+    margin:.5em;
+    flex-wrap: wrap;
+}
+footer{
+    /* background-color: rgb(49, 80, 70); */
+    color: bisque;
+}
+    
+/* .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  } */
+.social-icons{
+	padding:30px;
+	/* background-color:#00506b; */
+  text-align: center;
+}
+.social-icons a{
+	color:#fff;
+  line-height:30px;
+  font-size:30px;
+  margin: 0 5px;
+  text-decoration:none;
+  
+}
+.social-icons a i{
+	line-height:30px;
+  font-size:30px;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1); 
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1); 
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+.social-icons a:hover i{
+  box-shadow: 0px 0px 150px #000000;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.5);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.5);   
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.5);
+  transition: all 200ms ease-in;
+  transform: scale(1.5);
+}
+#copy{
+    /* margin: 10px; */
+    background-color: rgb(39, 49, 39);
+    padding: 10px;
+}

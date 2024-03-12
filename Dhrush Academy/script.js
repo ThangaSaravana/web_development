@@ -1,0 +1,1 @@
+alert("welcome to Dhrush Academy........ belive in beyond yourslef")
