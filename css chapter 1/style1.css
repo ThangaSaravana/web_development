@@ -1,0 +1,15 @@
+h1{
+    color:blue;
+    color:rgb(100,20,99);
+    color:#64964b;
+    color:hsl(44,39, 49);
+    /* we can give opacity in the hsla format */
+    color:hsla(100, 33, 44,0.3);
+    background-color: rgb(rgb(174, 14, 14), rgb(139, 157, 139), rgb(118, 118, 157));
+    background-color:red;
+    /* we can give the opacity factor by giving rgba in the code */
+    background-color:rgba(255,0,0,0.4);
+}
+body{
+    background-color:greenyellow;
+}
